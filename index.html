@@ -1,8 +1,171 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Resume</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABINASH TALUKDAR - Senior Software Engineer</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS (optional) -->
+    <style>
+        .section-title {
+            margin-top: 50px;
+            margin-bottom: 30px;
+            font-size: 2rem;
+            text-align: center;
+        }
+
+        .skills-list li {
+            margin-bottom: 10px;
+        }
+
+        .project-item {
+            margin-bottom: 20px;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            margin-bottom: 15px;
+        }
+
+        .btn-primary {
+            background-color: #0056b3;
+            border-color: #004085;
+        }
+    </style>
 </head>
+
 <body>
-<h1>Abinash Talukdar Portfolio</h1>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">ABINASH TALUKDAR</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="text-center text-white bg-primary py-5">
+        <div class="container">
+            <h1>Hi, I'm ABINASH TALUKDAR</h1>
+            <p class="lead">Senior Software Engineer specializing in PHP, Laravel, Python, Django, AWS, EC2, S3 & DevOps</p>
+            <!-- <a href="#contact" class="btn btn-light">Get in Touch</a> -->
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="container py-5">
+        <h2 class="section-title">About Me</h2>
+        <p>I am a Senior Software Engineer with over 6 years of experience in designing and building scalable applications. I specialize in backend development with PHP (Laravel) and Python (Django), cloud architecture using AWS, and DevOps practices for continuous delivery. I am passionate about solving complex problems and building efficient systems that deliver value.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="container py-5">
+        <h2 class="section-title">Skills</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h4>Languages & Frameworks</h4>
+                <ul class="skills-list">
+                    <li>PHP, Laravel</li>
+                    <li>Python, Django</li>
+                    <li>JavaScript, Jquery</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Cloud & DevOps</h4>
+                <ul class="skills-list">
+                    <li>AWS (EC2, S3, RDS)</li>
+                    <li>Docker, Kubernetes</li>
+                    <li>CI/CD, Jenkins</li>
+                    <li>Terraform, Ansible</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <h4>Version Control</h4>
+                <ul class="skills-list">
+                    <li>Git, GitHub</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="container py-5">
+        <h2 class="section-title">Experience</h2>
+        <div>
+            <h4>Senior Software Engineer | APEXASPIRE DIGICOM SOLUTIONS | 2021 - Present</h4>
+            <ul>
+                <li>Designed and implemented microservices using PHP (Laravel) and Python (Django) deployed on AWS EC2.</li>
+                <li>Optimized serverless architecture on AWS, reducing costs by 30% and improving performance.</li>
+                <li>Led DevOps automation for CI/CD pipelines using Jenkins, Docker, and Kubernetes.</li>
+            </ul>
+        </div>
+        <div>
+            <h4>Software Engineer | SIQES | 2018 - 2021</h4>
+            <ul>
+                <li>Developed and maintained a variety of web applications using Laravel,AWS S3 for media storage.</li>
+                <li>Worked on high-performance systems with large data volumes using AWS RDS.</li>
+                <li>Integrated third-party APIs and payment gateways such as BILLDESK, ATOM.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="container py-5">
+        <h2 class="section-title">Projects</h2>
+        <div class="project-item">
+            <h4>Real-Time Analytics Dashboard</h4>
+            <p>Built a real-time analytics dashboard for monitoring business metrics. Used Django, AWS EC2, S3 for data storage, and Socket.io for real-time updates.</p>
+            <a href="https://github.com/yourusername/project-name" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+        </div>
+        <div class="project-item">
+            <h4>E-Commerce Platform</h4>
+            <p>Developed a full-stack e-commerce platform with Laravel (backend), Vue.js (frontend), integrated payment systems, and deployed on AWS.</p>
+            <a href="https://github.com/yourusername/project-name" target="_blank" class="btn btn-outline-primary">View on GitHub</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container py-5">
+        <h2 class="section-title">Contact with me on:</h2>
+        <!-- <form action="your-email-endpoint" method="POST" class="contact-form">
+            <input type="text" class="form-control" placeholder="Your Name" required>
+            <input type="email" class="form-control" placeholder="Your Email" required>
+            <textarea class="form-control" placeholder="Your Message" rows="4" required></textarea>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+        </form> -->
+        <!-- <p class="mt-4">Connect with me on:</p> -->
+        <ul>
+            <li><a href="https://github.com/abinasht613/" target="_blank">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/abinash-talukdar-939a65127" target="_blank">LinkedIn</a></li>
+            <li><a href="mailto:abinasht613@gmail.com">Email: abinasht613@gmail.com</a></li>
+            <li><a href="">Mobile: 8254076905</a></li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Abinash Talukdar. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>
